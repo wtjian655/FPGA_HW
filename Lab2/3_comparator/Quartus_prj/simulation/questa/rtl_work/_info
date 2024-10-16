@@ -1,0 +1,73 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/simulation/questa
+T_opt
+!s110 1729051470
+V7b9PV]DOl`P<N5fKk5Hzb2
+04 13 4 work tb_comparator fast 0
+=1-2c3358ba5b7b-670f3b4e-bb-4878
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vcomparator
+2D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl/comparator.v
+Z3 !s110 1729051469
+!i10b 1
+!s100 bc@R9RHVc>R2C9MidGk?;0
+ID=bme?Ye`T1XEnH<[3QWE1
+R1
+w1729048861
+8D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl/comparator.v
+FD:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl/comparator.v
+!i122 0
+L0 3 35
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z6 !s108 1729051469.000000
+!s107 D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl/comparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl|D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl/comparator.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vtb_comparator
+2D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim/tb_comparator.v
+R3
+!i10b 1
+!s100 5j4K@oG19@JBg:NF7GFH`2
+IVXSciZ5PlA4DQWf0^m`]o3
+R1
+w1729050972
+8D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim/tb_comparator.v
+FD:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim/tb_comparator.v
+!i122 1
+L0 4 43
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim/tb_comparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim|D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim/tb_comparator.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2

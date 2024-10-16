@@ -1,0 +1,148 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do decoder2_4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work rtl_work 
+# Copying d:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/FPGA-Labotory/Lab2/2_24decoder/Quartus_prj/rtl {D:/FPGA-Labotory/Lab2/2_24decoder/Quartus_prj/rtl/decoder2_4.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:19:44 on Oct 15,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FPGA-Labotory/Lab2/2_24decoder/Quartus_prj/rtl" D:/FPGA-Labotory/Lab2/2_24decoder/Quartus_prj/rtl/decoder2_4.v 
+# -- Compiling module decoder2_4
+# 
+# Top level modules:
+# 	decoder2_4
+# End time: 20:19:44 on Oct 15,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/FPGA-Labotory/Lab2/2_24decoder/Quartus_prj/Sim {D:/FPGA-Labotory/Lab2/2_24decoder/Quartus_prj/Sim/tb_decoder2_4.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:19:44 on Oct 15,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FPGA-Labotory/Lab2/2_24decoder/Quartus_prj/Sim" D:/FPGA-Labotory/Lab2/2_24decoder/Quartus_prj/Sim/tb_decoder2_4.v 
+# -- Compiling module tb_decoder2_4
+# 
+# Top level modules:
+# 	tb_decoder2_4
+# End time: 20:19:44 on Oct 15,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_decoder2_4
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_decoder2_4 
+# Start time: 20:19:45 on Oct 15,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_decoder2_4(fast)
+# Loading work.decoder2_4(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+# @time    0ns: in=00 ena=0 out=1110
+# @time   10ns: in=00 ena=1 out=1111
+# @time   20ns: in=01 ena=1 out=1111
+# @time   40ns: in=01 ena=0 out=1101
+# @time   50ns: in=01 ena=1 out=1111
+# @time   60ns: in=00 ena=1 out=1111
+# @time   70ns: in=01 ena=0 out=1101
+# @time  100ns: in=01 ena=1 out=1111
+# @time  110ns: in=00 ena=1 out=1111
+# @time  120ns: in=00 ena=0 out=1110
+# @time  130ns: in=00 ena=1 out=1111
+# @time  150ns: in=01 ena=1 out=1111
+# @time  160ns: in=01 ena=0 out=1101
+# @time  170ns: in=00 ena=0 out=1110
+# @time  180ns: in=00 ena=1 out=1111
+# @time  200ns: in=01 ena=1 out=1111
+# @time  220ns: in=00 ena=0 out=1110
+# @time  230ns: in=01 ena=1 out=1111
+# @time  240ns: in=01 ena=0 out=1101
+# @time  250ns: in=00 ena=0 out=1110
+# @time  270ns: in=01 ena=0 out=1101
+# @time  280ns: in=00 ena=1 out=1111
+# @time  290ns: in=01 ena=0 out=1101
+# @time  300ns: in=00 ena=0 out=1110
+# @time  320ns: in=01 ena=1 out=1111
+# @time  340ns: in=01 ena=0 out=1101
+# @time  350ns: in=00 ena=1 out=1111
+# @time  360ns: in=01 ena=1 out=1111
+# @time  370ns: in=00 ena=0 out=1110
+# @time  380ns: in=01 ena=1 out=1111
+# @time  390ns: in=00 ena=1 out=1111
+# @time  400ns: in=01 ena=0 out=1101
+# @time  410ns: in=01 ena=1 out=1111
+# @time  420ns: in=01 ena=0 out=1101
+# @time  430ns: in=01 ena=1 out=1111
+# @time  440ns: in=00 ena=0 out=1110
+# @time  460ns: in=01 ena=1 out=1111
+# @time  470ns: in=00 ena=0 out=1110
+# @time  480ns: in=01 ena=1 out=1111
+# @time  500ns: in=01 ena=0 out=1101
+# @time  510ns: in=01 ena=1 out=1111
+# @time  520ns: in=01 ena=0 out=1101
+# @time  530ns: in=00 ena=0 out=1110
+# @time  560ns: in=01 ena=1 out=1111
+# @time  580ns: in=01 ena=0 out=1101
+# @time  590ns: in=01 ena=1 out=1111
+# @time  600ns: in=00 ena=0 out=1110
+# @time  610ns: in=01 ena=1 out=1111
+# @time  620ns: in=00 ena=1 out=1111
+# @time  630ns: in=01 ena=1 out=1111
+# @time  640ns: in=01 ena=0 out=1101
+# @time  650ns: in=00 ena=0 out=1110
+# @time  660ns: in=01 ena=0 out=1101
+# @time  670ns: in=00 ena=0 out=1110
+# @time  680ns: in=01 ena=1 out=1111
+# @time  690ns: in=00 ena=0 out=1110
+# @time  700ns: in=01 ena=0 out=1101
+# @time  710ns: in=00 ena=0 out=1110
+# @time  720ns: in=01 ena=0 out=1101
+# @time  730ns: in=00 ena=1 out=1111
+# @time  750ns: in=01 ena=1 out=1111
+# @time  770ns: in=00 ena=0 out=1110
+# @time  780ns: in=00 ena=1 out=1111
+# @time  790ns: in=00 ena=0 out=1110
+# @time  800ns: in=01 ena=1 out=1111
+# @time  810ns: in=00 ena=0 out=1110
+# @time  820ns: in=00 ena=1 out=1111
+# @time  830ns: in=01 ena=0 out=1101
+# @time  840ns: in=00 ena=0 out=1110
+# @time  850ns: in=01 ena=1 out=1111
+# @time  860ns: in=00 ena=0 out=1110
+# @time  870ns: in=00 ena=1 out=1111
+# @time  880ns: in=00 ena=0 out=1110
+# @time  890ns: in=01 ena=0 out=1101
+# @time  900ns: in=00 ena=0 out=1110
+# @time  910ns: in=01 ena=0 out=1101
+# @time  920ns: in=01 ena=1 out=1111
+# @time  930ns: in=00 ena=0 out=1110
+# @time  950ns: in=01 ena=0 out=1101
+# @time  960ns: in=00 ena=0 out=1110
+# @time  970ns: in=00 ena=1 out=1111
+# @time  980ns: in=01 ena=1 out=1111
+# @time  990ns: in=00 ena=1 out=1111
+# End time: 01:41:14 on Oct 16,2024, Elapsed time: 5:21:29
+# Errors: 0, Warnings: 1

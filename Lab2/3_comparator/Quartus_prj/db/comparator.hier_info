@@ -1,0 +1,12 @@
+|comparator
+A => LessThan0.IN1
+A => always0.IN0
+A => LessThan1.IN1
+B => LessThan0.IN2
+B => always0.IN1
+B => LessThan1.IN2
+gt <= gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+eq <= eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+lt <= lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

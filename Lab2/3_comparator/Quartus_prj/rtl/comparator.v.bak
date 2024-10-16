@@ -1,0 +1,26 @@
+`timescale 1ns/1ns
+
+module comparator()
+{
+input wire A,
+input wire B,
+
+output reg[0:0] gt,
+output reg[0:0] eq,
+output reg[0:0] lt
+};
+
+always@(*)
+begin
+
+if(A>B)
+gt=0;
+else if(A==B)
+eq=0;
+else if(A<B)
+lt=0;
+else
+default: ;
+end
+
+endmodule

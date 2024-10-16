@@ -1,0 +1,148 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do comparator_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work rtl_work 
+# Copying d:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl {D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl/comparator.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 12:04:29 on Oct 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl" D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/rtl/comparator.v 
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# End time: 12:04:29 on Oct 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim {D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim/tb_comparator.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 12:04:29 on Oct 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim" D:/FPGA-Labotory/Lab2/3_comparator/Quartus_prj/sim/tb_comparator.v 
+# -- Compiling module tb_comparator
+# 
+# Top level modules:
+# 	tb_comparator
+# End time: 12:04:29 on Oct 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_comparator
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_comparator 
+# Start time: 12:04:29 on Oct 16,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_comparator(fast)
+# Loading work.comparator(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+# @time    0ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time   10ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time   20ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time   40ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time   50ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time   60ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time   70ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  100ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  110ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time  120ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  130ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time  150ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  160ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  170ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  180ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time  200ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  220ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  230ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  240ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  250ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  270ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  280ns: A=0 B=1 gt=1 eq=1 lt=1
+# @time  290ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  300ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  320ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  340ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  350ns: A=0 B=1 gt=1 eq=1 lt=1
+# @time  360ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  370ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  380ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  390ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time  400ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  410ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  420ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  430ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  440ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  460ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  470ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  480ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  500ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  510ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  520ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  530ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  560ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  580ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  590ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  600ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  610ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  620ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time  630ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  640ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  650ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  660ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  670ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  680ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  690ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  700ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  710ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  720ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  730ns: A=0 B=1 gt=1 eq=1 lt=1
+# @time  750ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  770ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  780ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time  790ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  800ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  810ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  820ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time  830ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  840ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  850ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  860ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  870ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time  880ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  890ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  900ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  910ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  920ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  930ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  950ns: A=1 B=0 gt=0 eq=1 lt=0
+# @time  960ns: A=0 B=0 gt=1 eq=0 lt=1
+# @time  970ns: A=0 B=1 gt=1 eq=0 lt=1
+# @time  980ns: A=1 B=1 gt=1 eq=0 lt=1
+# @time  990ns: A=0 B=1 gt=1 eq=0 lt=1
+# End time: 12:05:21 on Oct 16,2024, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 1
